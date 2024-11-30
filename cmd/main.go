@@ -34,6 +34,8 @@ func main() {
 		},
 	}
 
-	books = AddBook(books, Book{Title: "For the love of Go"})
+	toAdd := Book{Title: "Sunrise at Midnight", Author: "Ongoro Wa Munga", Series: 1, Copies:30}
+	toPrint := AddBook(books, toAdd)
 	fmt.Println(books)
+	fmt.Println(toPrint)
 }
